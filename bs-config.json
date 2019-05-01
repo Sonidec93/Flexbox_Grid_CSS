@@ -1,0 +1,8 @@
+{
+    "port": 7600,
+    "files": ["./**/*.{html,htm,css,js}"],
+    "server": { "baseDir": "./" },
+    "ui": {
+      "port": 7600
+    }
+  }
