@@ -1,0 +1,28 @@
+
+body{
+    margin:20px;
+    height:100vh;
+    display:grid;
+    grid-template-rows:20vh auto 20vh;
+    grid-template-columns:[col-1-start]1fr [col-1-end col-2-start]4fr;
+}
+header{
+    background:green;
+    grid-column-start: col-1-start;
+    grid-column-end: -1;
+    
+}
+footer{
+    background:pink;
+    /* grid-column-start: col-1-start;
+    grid-column-end: -1; */
+    grid-column:col-1-start/-1
+}
+aside{
+    background:red;
+    grid-column-start:1;
+    grid-row-start:2;
+}
+main{
+    background:yellow;
+}

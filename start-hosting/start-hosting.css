@@ -1,0 +1,132 @@
+.signup-title {
+    text-align: center;
+    margin-top: 4rem;
+    color: red;
+}
+
+.signup-form {
+    padding: 1rem;
+    margin: auto;
+    font: inherit;
+    width: 100%;
+}
+
+.signup-form label {
+    font-weight: bold;
+}
+
+.signup-form button {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.signup-form button[disabled], .signup-form button[disabled]:hover, .signup-form button[disabled]:focus {
+    outline: none;
+    cursor: not-allowed;
+    background: grey;
+    border: solid darkgrey 1px;
+    color: gainsboro;
+}
+
+.signup-form input:not([type="checkbox"]), .signup-form select {
+    display: block;
+    background: rgb(145, 189, 145);
+    border: solid 1px rgb(0, 53, 0);
+    margin: 1rem 0rem;
+    width: 100%;
+    font: inherit;
+}
+
+.signup-form [type="checkbox"] {
+    border-radius: 50%;
+    height: 1rem;
+    vertical-align: bottom;
+    width: 1rem;
+    display: inline-block;
+    background: rgb(248, 242, 242);
+    border: solid darkgrey 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.signup-form [type="checkbox"]+label {
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.signup-form [type="checkbox"]:checked {
+    background: green;
+    border: solid 1px darkgreen;
+}
+
+.signup-form [type="checkbox"]:focus {
+    outline: none;
+}
+
+.signup-form input:invalid{
+    background: rgb(209, 152, 152) !important;
+    border: solid 1px rgb(129, 21, 21) !important;
+}
+
+@media(min-width:40rem) {
+    .signup-title {
+        text-align: center;
+        margin-top: 4rem;
+        color: red;
+    }
+    .signup-form {
+        margin: auto;
+        font: inherit;
+        width: 40rem;
+    }
+    .signup-form label {
+        font-weight: bold;
+    }
+    .signup-form button {
+        display: block;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .signup-form button[disabled], .signup-form button[disabled]:hover, .signup-form button[disabled]:focus {
+        outline: none;
+        cursor: not-allowed;
+        background: grey;
+        border: solid darkgrey 1px;
+        color: gainsboro;
+    }
+    .signup-form input:not([type="checkbox"]), .signup-form select {
+        display: block;
+        margin: 1rem 0rem;
+        width: 100%;
+        font: inherit;
+    }
+    .signup-form [type="checkbox"] {
+        border-radius: 50%;
+        height: 1rem;
+        vertical-align: bottom;
+        width: 1rem;
+        display: inline-block;
+        background: rgb(248, 242, 242);
+        border: solid darkgrey 1px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .signup-form [type="checkbox"]+label {
+        vertical-align: bottom;
+        display: inline-block;
+    }
+    .signup-form [type="checkbox"]:checked {
+        background: green;
+        border: solid 1px darkgreen;
+    }
+    .signup-form [type="checkbox"]:focus {
+        outline: none;
+    }
+    .signup-form :invalid{
+        background: rgb(209, 152, 152) !important;
+        border: solid 1px rgb(129, 21, 21) !important;
+    }
+}
